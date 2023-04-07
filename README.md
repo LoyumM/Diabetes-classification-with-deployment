@@ -14,7 +14,7 @@ This dataset is originally from the National Institute of Diabetes and Digestive
 ### Content
 The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
- ## To run it locally:
+ # To run it locally:
 
 To do so, open terminal and do the followig steps:
 
