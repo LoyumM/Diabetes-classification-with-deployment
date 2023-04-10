@@ -1,0 +1,88 @@
+<html>
+<body>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+    </style>
+    <header>
+      <nav class="center">
+        <a id="linkedin-link" target="_blank" href="https://www.linkedin.com/in/loyumba-moirangthem">LinkedIn</a>
+        <a id="github-link" target="_blank" href="https://github.com/LoyumM/Diabetes-classification-with-cloud-deployment">Github repository</a>
+        <div class="clear"></div>
+      </nav>
+    </header>
+    
+    <style>
+      header {
+        display: flex;
+        justify-content: center;
+      }
+      
+      nav {
+        display: flex;
+        justify-content: center;
+      }
+      
+      nav a {
+        margin-right: 10px;
+      }
+    </style>
+
+    <div class="login" style="text-align: center;">
+       <h1>Diabetes Prediction</h1>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        
+        <div class="mb-3">
+            <label class="form-label">Number of times pregnant</label>
+            <input class="form-control" type="number" name="Pregnancies"
+                placeholder="Number of pregnancies(0-15)" min='0' max='15' style="text-align: center; width: 20%;" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Glucose level</label>
+            <input class="form-control" type="number" name="Glucose"
+                placeholder="Sugar level(0-199)" min='0' max='199' style="text-align: center; width: 20%;" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Diastolic blood pressure</label>
+            <input class="form-control" type="number" name="BloodPressure"
+                placeholder="Diastolic blood pressure in mmHg(0-125)" min='0' max='125' style="text-align: center; width: 20%;" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Triceps skin fold thickness</label>
+            <input class="form-control" type="number" name="SkinThickness"
+                placeholder="Triceps skin fold thickness in mm(0-99)" min='0' max='99' style="text-align: center; width: 20%;" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Insulin level</label>
+            <input class="form-control" type="number" name="Insulin"
+                placeholder="2-Hour serum insulin (mu U/ml)(0-900)" min='0' max='900' style="text-align: center; width: 20%;" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">BMI</label>
+            <input class="form-control" type="number" name="BMI"
+                placeholder="Body Mass Index(15-70)" min='15' max='70' style="text-align: center; width: 20%;"/>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Diabetes pedigree function</label>
+            <input class="form-control" type="number" name="DiabetesPedigreeFunction"
+                placeholder="Diabetes pedigree function(0-3)" min='0' max='3' style="text-align: center; width: 20%;" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Age</label>
+            <input class="form-control" type="number" name="Age"
+                placeholder="Age in years(21-100)" min='21' max='100' style="text-align: center; width: 20%;" />
+        </div>
+
+        <div class="mb-3">
+            <input class="btn btn-primary" type="submit" value="Predict" required />
+        </div>
+    </form>
+    <h2 style="text-align: center;">
+       The prediction is {{results}}
+    </h2>
+
+    <p><strong>Disclaimer:</strong> With the dataset the model was trained on, all patients here are <em>females</em> at least 21 years old.</p>
+   <body>
+</html>
