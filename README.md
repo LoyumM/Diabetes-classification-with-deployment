@@ -14,9 +14,14 @@ This dataset is originally from the National Institute of Diabetes and Digestive
 ### Content
 The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
- # To run it locally:
+## Tech stack used:
+1. Python
+2. Flask
+3. HTML
 
-To do so, open terminal and do the followig steps:
+# How to run:
+
+The app is now available for offline run. It'll be deployed on a cloud platform soon.
 
 #### Clone the repo
 
@@ -33,3 +38,10 @@ To do so, open terminal and do the followig steps:
 #### Install the required modules
 
 `pip install -r requirements.txt`
+
+#### Run the application
+
+`python run application.py`
+
+Open the following link in a browser: http://127.0.0.1:5000/predictdata
+
