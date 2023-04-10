@@ -20,7 +20,7 @@ The datasets consists of several medical predictor variables and one target vari
 3. HTML
 
 ## Screenshot of UI
-![Home](./notebook/data/screenshot.png)
+![Home](./screenshots/UI.png)
 
 # How to run:
 
