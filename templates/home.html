@@ -80,8 +80,8 @@
         </div>
     </form>
     <h2 style="text-align: center;">
-       The prediction is {{results}}
-    </h2>
+        The prediction is {% if results == 1.0 %}Diabetic{% else %}Not-Diabetic{% endif %}
+     </h2>
 
     <p><strong>Disclaimer:</strong> With the dataset the model was trained on, all patients here are <em>females</em> at least 21 years old.</p>
    <body>
