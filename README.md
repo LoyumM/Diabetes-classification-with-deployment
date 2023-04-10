@@ -19,6 +19,9 @@ The datasets consists of several medical predictor variables and one target vari
 2. Flask
 3. HTML
 
+## Screenshot of UI
+![Home](./notebook/data/screenshot.png)
+
 # How to run:
 
 The app is now available for offline run. It'll be deployed on a cloud platform soon.
