@@ -1,4 +1,4 @@
-# Classification with Hyperparameter tuning
+# Diabetes classification with deployment
 - Diabetes classification using the Prima Indians Diabetes Database
 - Dataset: https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database
 - Tried various classification algorithms.
