@@ -14,21 +14,23 @@ This dataset is originally from the National Institute of Diabetes and Digestive
 ### Content
 The datasets consists of several medical predictor variables and one target variable, Outcome. Predictor variables includes the number of pregnancies the patient has had, their BMI, insulin level, age, and so on.
 
-## Tech stack used:
+## Tech stack used
 1. Python
 2. Flask
 3. HTML
+4. AWS
 
-## Screenshot of UI
+## Deployment link
+http://diabetes-env.eba-mngrqrji.eu-north-1.elasticbeanstalk.com/predictdata
+## Screenshot of the webapp
 ![Home](./screenshots/UI.png)
 
-# How to run:
-
-The app is now available for offline run. It'll be deployed on a cloud platform soon.
+# To run offline:
+This can also be run offline. To do so, follow the steps below:
 
 #### Clone the repo
 
-`https://github.com/LoyumM/Diabetes-classification-with-cloud-deployment.git`
+`git clone 'https://github.com/LoyumM/Diabetes-classification-with-cloud-deployment.git'`
 
 #### Create a virtual environment
 
@@ -44,7 +46,6 @@ The app is now available for offline run. It'll be deployed on a cloud platform 
 
 #### Run the application
 
-`python run application.py`
+`python application.py`
 
 Open the following link in a browser: http://127.0.0.1:5000/predictdata
-
